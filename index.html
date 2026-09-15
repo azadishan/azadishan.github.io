@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ishan Azad</title>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(850px, 90%);
+      margin: auto;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid #ddd;
+      z-index: 1000;
+    }
+
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      margin-left: 22px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .nav-links a:hover {
+      color: #777;
+    }
+
+    header {
+      padding: 100px 0 80px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 5px;
+    }
+
+    header h2 {
+      font-size: 20px;
+      font-weight: normal;
+      color: #555;
+      margin-top: 0;
+    }
+
+    section {
+      padding: 80px 0;
+      border-top: 1px solid #eee;
+      scroll-margin-top: 70px;
+    }
+
+    section h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .paper {
+      margin-bottom: 35px;
+    }
+
+    .paper-title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .paper-links a {
+      margin-right: 12px;
+    }
+
+    a {
+      color: #255f96;
+    }
+
+    footer {
+      border-top: 1px solid #eee;
+      padding: 30px 0;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 650px) {
+      .nav-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        margin-top: 8px;
+      }
+
+      .nav-links a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+
+      header {
+        padding: 70px 0 50px;
+      }
+
+      header h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-content">
+
+      <div class="name">
+        Ishan Azad
+      </div>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- Main introduction -->
+  <header>
+    <div class="container">
+
+      <h1>Ishan Azad</h1>
+
+      <h2>
+        PhD Student in Economics<br>
+        Southern Methodist University
+      </h2>
+
+      <p>
+        My research interests are in microeconomic theory,
+        information economics, and strategic information acquisition.
+      </p>
+
+    </div>
+  </header>
+
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+
+      <h2>About</h2>
+
+      <p>
+        I am a PhD student in Economics at Southern Methodist University.
+        My research focuses on information economics and microeconomic theory.
+      </p>
+
+      <p>
+        I am particularly interested in how information acquisition,
+        disclosure, and market transparency affect strategic behavior
+        and market outcomes.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- Research -->
+  <section id="research">
+    <div class="container">
+
+      <h2>Research</h2>
+
+      <div class="paper">
+
+        <div class="paper-title">
+          Paper Title
+        </div>
+
+        <p>
+          Short description or abstract of your paper goes here.
+        </p>
+
+        <div class="paper-links">
+          <a href="#">Paper</a>
+          <a href="#">Abstract</a>
+        </div>
+
+      </div>
+
+
+      <div class="paper">
+
+        <div class="paper-title">
+          Work in Progress
+        </div>
+
+        <p>
+          Short description of the project.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Teaching -->
+  <section id="teaching">
+    <div class="container">
+
+      <h2>Teaching</h2>
+
+      <p>
+        <strong>Undergraduate Game Theory</strong><br>
+        Southern Methodist University
+      </p>
+
+      <p>
+        <strong>Intermediate Microeconomics</strong><br>
+        Southern Methodist University
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- CV -->
+  <section id="cv">
+    <div class="container">
+
+      <h2>CV</h2>
+
+      <p>
+        You can download my current CV here.
+      </p>
+
+      <p>
+        <a href="cv.pdf" target="_blank">
+          Download CV
+        </a>
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+
+      <h2>Contact</h2>
+
+      <p>
+        Department of Economics<br>
+        Southern Methodist University<br>
+        Dallas, Texas
+      </p>
+
+      <p>
+        Email:
+        <a href="mailto:YOUR_EMAIL@smu.edu">
+          YOUR_EMAIL@smu.edu
+        </a>
+      </p>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      © 2026 Ishan Azad
+    </div>
+  </footer>
+
+</body>
+</html>
