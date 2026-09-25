@@ -24,6 +24,7 @@
       margin: auto;
     }
 
+    /* Navigation */
     nav {
       position: sticky;
       top: 0;
@@ -54,12 +55,28 @@
       color: #777;
     }
 
+    /* Introduction */
     header {
       padding: 100px 0 80px;
     }
 
+    .intro {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .profile-photo {
+      width: 190px;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
     header h1 {
       font-size: 42px;
+      margin-top: 0;
       margin-bottom: 5px;
     }
 
@@ -68,8 +85,14 @@
       font-weight: normal;
       color: #555;
       margin-top: 0;
+      margin-bottom: 20px;
     }
 
+    header p {
+      margin-bottom: 0;
+    }
+
+    /* Sections */
     section {
       padding: 80px 0;
       border-top: 1px solid #eee;
@@ -81,6 +104,7 @@
       margin-bottom: 30px;
     }
 
+    /* Research papers */
     .paper {
       margin-bottom: 35px;
     }
@@ -94,10 +118,26 @@
       margin-right: 12px;
     }
 
+    /* Teaching dropdown */
+    .teaching-dropdown {
+      margin-top: 30px;
+    }
+
+    .teaching-dropdown summary {
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .teaching-dropdown-content {
+      margin-top: 20px;
+    }
+
+    /* Links */
     a {
       color: #255f96;
     }
 
+    /* Footer */
     footer {
       border-top: 1px solid #eee;
       padding: 30px 0;
@@ -105,7 +145,9 @@
       font-size: 14px;
     }
 
+    /* Mobile */
     @media (max-width: 650px) {
+
       .nav-content {
         flex-direction: column;
         align-items: flex-start;
@@ -124,15 +166,30 @@
         padding: 70px 0 50px;
       }
 
+      .intro {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+      }
+
+      .profile-photo {
+        width: 160px;
+        height: 160px;
+      }
+
       header h1 {
         font-size: 34px;
+      }
+
+      section {
+        padding: 60px 0;
       }
     }
   </style>
 </head>
 
-
 <body>
+
 
   <!-- Navigation -->
   <nav>
@@ -143,7 +200,6 @@
       </div>
 
       <div class="nav-links">
-        <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#teaching">Teaching</a>
         <a href="#cv">CV</a>
@@ -177,24 +233,6 @@
   </div>
 </header>
 
-
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-
-      <h2>About</h2>
-
-      <p>
-        I am a PhD student in Economics at Southern Methodist University.
-        My research focuses on information economics and microeconomic theory.
-      </p>
-
-      <p>
-        
-      </p>
-
-    </div>
-  </section>
 
 
   <!-- Research -->
